@@ -12,17 +12,37 @@
       <div class="nav-wrapper">
         <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Signup</a></li>
+          <li><a class="login" href="#">Login</a></li>
+          <li><a class="signup" href="#">Signup</a></li>
         </ul>
         <ul class="side-nav" id="mobile">
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Signup</a></li>
+          <li><a class="login" href="#">Login</a></li>
+          <li><a class="signup" href="#">Signup</a></li>
         </ul>
       </div>
     </nav>
 
-      <div class="row section">
+<!-- Login -->
+      <div class="row section" id="login-Form">
+          <div class="col s4 offset-s4 center-align">
+              <img src="views/img/chatoo.png" alt="chatoo">
+          </div>
+          <div class="col s4 offset-s4 input-field">
+            <input id="mobile" type="text" class="validate">
+            <label for="mobile">Mobile Number</label>
+          </div>
+          <div class="col s4 offset-s4 input-field">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+          <div class="col s4 offset-s4  right-align">
+              <a href="#" class="forgetPassword">Forget Password ?</a> <br>
+              <a href="#"><i class="material-icons">forward</i></a>
+          </div>
+        </div>
+
+<!-- signup -->
+      <div class="row section" id="signup-Form" style="display:none">
           <div class="col s4 offset-s4 center-align">
               <img src="views/img/chatoo.png" alt="chatoo">
           </div>
@@ -33,7 +53,13 @@
           <div class="col s4 offset-s4 input-field">
             <input id="password" type="text" class="validate">
             <label for="password">Password</label>
-            <a href="#">Forget Password ?</a>
+          </div>
+          <div class="col s4 offset-s4 input-field">
+            <input id="otp" type="text" class="validate">
+            <label for="otp">OTP</label>
+          </div>
+          <div class="col s4 offset-s4  right-align">
+            <a href="#"><i class="material-icons">forward</i></a>
           </div>
         </div>
 
